@@ -1,0 +1,77 @@
+{
+  "token": "YOUR_BOT_TOKEN_HERE",
+  "prefix": "!",
+  "owners": ["YOUR_USER_ID_HERE"],
+  "protection": {
+    "antiRaid": {
+      "enabled": true,
+      "threshold": 5,
+      "interval": 10000,
+      "action": "lockdown"
+    },
+    "antiSpam": {
+      "enabled": true,
+      "maxMessages": 5,
+      "interval": 5000,
+      "action": "mute",
+      "duration": 300000
+    },
+    "antiAlt": {
+      "enabled": true,
+      "minAge": 86400000,
+      "action": "kick"
+    },
+    "antiLink": {
+      "enabled": true,
+      "whitelist": ["discord.gg/yourserver", "youtube.com"],
+      "action": "delete"
+    },
+    "antiInvite": {
+      "enabled": true,
+      "action": "delete"
+    },
+    "massMention": {
+      "enabled": true,
+      "threshold": 5,
+      "action": "mute"
+    },
+    "antiNuke": {
+      "enabled": true,
+      "threshold": 3,
+      "interval": 10000,
+      "action": "lockdown"
+    }
+  },
+  "logging": {
+    "enabled": true,
+    "channel": "LOG_CHANNEL_ID_HERE",
+    "events": [
+      "messageDelete",
+      "messageUpdate",
+      "memberJoin",
+      "memberLeave",
+      "banAdd",
+      "banRemove",
+      "roleCreate",
+      "roleDelete",
+      "roleUpdate",
+      "channelCreate",
+      "channelDelete",
+      "channelUpdate",
+      "guildUpdate",
+      "voiceStateUpdate"
+    ]
+  },
+  "punishment": {
+    "muteRole": "MUTED",
+    "jailRole": "JAILED",
+    "defaultDuration": "5m",
+    "maxDuration": "7d"
+  },
+  "whitelist": {
+    "users": [],
+    "roles": [],
+    "channels": []
+  },
+  "database": "data/protector.db"
+}
