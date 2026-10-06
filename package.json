@@ -1,0 +1,26 @@
+{
+  "name": "vortex-protector",
+  "version": "1.0.0",
+  "description": "Vortex Protector - Discord Server Protection Bot (Wick-style)",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "discord.js": "^14.27.0",
+    "ms": "^2.1.3",
+    "pretty-ms": "^9.3.1"
+  },
+  "keywords": [
+    "discord",
+    "protection",
+    "security",
+    "moderation",
+    "anti-raid"
+  ],
+  "author": "Athalla Jovian",
+  "license": "MIT"
+}
